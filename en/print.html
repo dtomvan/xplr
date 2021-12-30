@@ -147,8 +147,8 @@ hackable file explorer.</p>
 <p>xplr is not meant to be a replacement for the standard shell commands or the
 GUI file managers. Rather, it aims to integrate them all and expose an
 intuitive, scriptable, keyboard controlled, real-time visual interface, also
-being an ideal candidate for further integration, enabling the users to achieve
-insane terminal productivity.</p>
+being an ideal candidate for further integration, enabling us to achieve insane
+terminal productivity.</p>
 <h2 id="features"><a class="header" href="#features">Features</a></h2>
 <h3 id="hackable"><a class="header" href="#hackable">Hackable</a></h3>
 <p>xplr is built with configurability in mind. So it allows you to perform a vast
@@ -156,7 +156,7 @@ set of operations and make it behave just the way you want.</p>
 <p>A few things you can do with the xplr configuration</p>
 <ul>
 <li><a href="layouts.html">Hack the layout</a></li>
-<li><a href="modes.html">Hack the key bindings</a></li>
+<li><a href="configure-key-bindings.html">Hack the key bindings</a></li>
 <li><a href="awesome-plugins.html">Extend with plugins</a></li>
 </ul>
 <h2 id="fast"><a class="header" href="#fast">Fast</a></h2>
@@ -275,11 +275,18 @@ available.</p>
 <p>xplr can be installed from one of the following community maintained
 repositories:</p>
 <p><a href="https://repology.org/project/xplr/versions"><img src="https://repology.org/badge/vertical-allrepos/xplr.svg" alt="packaging status" /></a></p>
+<h3 id="cross-platform"><a class="header" href="#cross-platform">Cross-platform</a></h3>
+<h4 id="snap"><a class="header" href="#snap"><a href="https://snapcraft.io/xplr">Snap</a></a></h4>
+<pre><code>snap install xplr --classic
+</code></pre>
+<h4 id="nixpkgs"><a class="header" href="#nixpkgs"><a href="https://github.com/NixOS/nixpkgs/blob/master/pkgs/applications/misc/xplr">Nixpkgs</a></a></h4>
+<pre><code>nix-env -f https://github.com/NixOS/nixpkgs/tarball/master -iA xplr
+</code></pre>
 <h3 id="arch-linux"><a class="header" href="#arch-linux">Arch Linux</a></h3>
-<h4 id="a-hrefhttpsarchlinuxorgpackagescommunityx86_64xplrofficial-community-repoa"><a class="header" href="#a-hrefhttpsarchlinuxorgpackagescommunityx86_64xplrofficial-community-repoa"><a href="https://archlinux.org/packages/community/x86_64/xplr">Official Community Repo</a></a></h4>
+<h4 id="official-community-repo"><a class="header" href="#official-community-repo"><a href="https://archlinux.org/packages/community/x86_64/xplr">Official Community Repo</a></a></h4>
 <pre><code>sudo pacman -S xplr
 </code></pre>
-<h4 id="a-hrefhttpsaurarchlinuxorgpackageso0sebnkxplroutdatedsbnsoapp50do_searchgoaura"><a class="header" href="#a-hrefhttpsaurarchlinuxorgpackageso0sebnkxplroutdatedsbnsoapp50do_searchgoaura"><a href="https://aur.archlinux.org/packages/?O=0&amp;SeB=n&amp;K=xplr&amp;outdated=&amp;SB=n&amp;SO=a&amp;PP=50&amp;do_Search=Go">AUR</a></a></h4>
+<h4 id="aur"><a class="header" href="#aur"><a href="https://aur.archlinux.org/packages/?O=0&amp;SeB=n&amp;K=xplr&amp;outdated=&amp;SB=n&amp;SO=a&amp;PP=50&amp;do_Search=Go">AUR</a></a></h4>
 <p>Binary version:</p>
 <pre><code>paru -S xplr-bin
 </code></pre>
@@ -287,17 +294,13 @@ repositories:</p>
 <pre><code>paru -S xplr-git
 </code></pre>
 <h3 id="void-linux"><a class="header" href="#void-linux">Void Linux</a></h3>
-<h4 id="a-hrefhttpsgithubcomshubham-cppvoid-pkg-templatesvoid-templates-by-shubhama"><a class="header" href="#a-hrefhttpsgithubcomshubham-cppvoid-pkg-templatesvoid-templates-by-shubhama"><a href="https://github.com/shubham-cpp/void-pkg-templates">void-templates by shubham</a></a></h4>
-<h3 id="nixos"><a class="header" href="#nixos">Nix(OS)</a></h3>
-<h4 id="a-hrefhttpsgithubcomnixosnixpkgsblobmasterpkgsapplicationsmiscxplrnixpkgsa"><a class="header" href="#a-hrefhttpsgithubcomnixosnixpkgsblobmasterpkgsapplicationsmiscxplrnixpkgsa"><a href="https://github.com/NixOS/nixpkgs/blob/master/pkgs/applications/misc/xplr">Nixpkgs</a></a></h4>
-<pre><code>nix-env -f https://github.com/NixOS/nixpkgs/tarball/master -iA xplr
-</code></pre>
+<h4 id="void-templates-by-shubham"><a class="header" href="#void-templates-by-shubham"><a href="https://github.com/shubham-cpp/void-pkg-templates">void-templates by shubham</a></a></h4>
 <h3 id="macos"><a class="header" href="#macos">macOS</a></h3>
-<h4 id="a-hrefhttpsportsmacportsorgportxplrmacportsa"><a class="header" href="#a-hrefhttpsportsmacportsorgportxplrmacportsa"><a href="https://ports.macports.org/port/xplr">MacPorts</a></a></h4>
+<h4 id="macports"><a class="header" href="#macports"><a href="https://ports.macports.org/port/xplr">MacPorts</a></a></h4>
 <pre><code>sudo port selfupdate
 sudo port install xplr
 </code></pre>
-<h4 id="a-hrefhttpsformulaebrewshformulaxplrhomebrewa"><a class="header" href="#a-hrefhttpsformulaebrewshformulaxplrhomebrewa"><a href="https://formulae.brew.sh/formula/xplr">Homebrew</a></a></h4>
+<h4 id="homebrew"><a class="header" href="#homebrew"><a href="https://formulae.brew.sh/formula/xplr">Homebrew</a></a></h4>
 <p>Stable branch:</p>
 <pre><code>brew install xplr
 </code></pre>
@@ -305,7 +308,7 @@ sudo port install xplr
 <pre><code>brew install --head xplr
 </code></pre>
 <h3 id="freebsd"><a class="header" href="#freebsd">FreeBSD</a></h3>
-<h4 id="a-hrefhttpscgitfreebsdorgportsplainmiscxplrportsa"><a class="header" href="#a-hrefhttpscgitfreebsdorgportsplainmiscxplrportsa"><a href="https://cgit.freebsd.org/ports/plain/misc/xplr/">ports</a></a></h4>
+<h4 id="ports"><a class="header" href="#ports"><a href="https://cgit.freebsd.org/ports/plain/misc/xplr/">ports</a></a></h4>
 <pre><code>pkg install xplr
 </code></pre>
 <p>Or</p>
@@ -313,7 +316,7 @@ sudo port install xplr
 make install clean
 </code></pre>
 <h3 id="netbsd"><a class="header" href="#netbsd">NetBSD</a></h3>
-<h4 id="a-hrefhttpspkgsrcsesysutilsxplrpkgsrca"><a class="header" href="#a-hrefhttpspkgsrcsesysutilsxplrpkgsrca"><a href="https://pkgsrc.se/sysutils/xplr">pkgsrc</a></a></h4>
+<h4 id="pkgsrc"><a class="header" href="#pkgsrc"><a href="https://pkgsrc.se/sysutils/xplr">pkgsrc</a></a></h4>
 <pre><code>pkgin install xplr
 </code></pre>
 <p>Or</p>
@@ -340,7 +343,7 @@ tar xzvf xplr-$platform.tar.gz
 # Place in $PATH
 sudo mv xplr /usr/local/bin/
 </code></pre>
-<h2 id="from-a-hrefhttpscratesiocratesxplrcratesioa"><a class="header" href="#from-a-hrefhttpscratesiocratesxplrcratesioa">From <a href="https://crates.io/crates/xplr">crates.io</a></a></h2>
+<h2 id="from-cratesio"><a class="header" href="#from-cratesio">From <a href="https://crates.io/crates/xplr">crates.io</a></a></h2>
 <p>Prerequisites:</p>
 <ul>
 <li><a href="https://www.rust-lang.org/tools/install">Rust toolchain</a>,</li>
@@ -370,7 +373,7 @@ cargo build --locked --release --bin xplr
 sudo cp target/release/xplr /usr/local/bin/
 </code></pre>
 <h2 id="android"><a class="header" href="#android">Android</a></h2>
-<h3 id="a-hrefhttpstermuxcomtermuxa"><a class="header" href="#a-hrefhttpstermuxcomtermuxa"><a href="https://termux.com/">Termux</a></a></h3>
+<h3 id="termux"><a class="header" href="#termux"><a href="https://termux.com/">Termux</a></a></h3>
 <p><a href="https://gifyu.com/image/tF2D"><img src="https://s3.gifyu.com/images/xplr-termuxfd3c398d3cf4bcbc.md.jpg" alt="xplr-termuxfd3c398d3cf4bcbc.md.jpg" /></a></p>
 <blockquote>
 <p>Please note that xplr isn't heavily tested on Termux, hence things might
@@ -1369,7 +1372,7 @@ the input buffer.</p>
 <h3 id="followsymlink"><a class="header" href="#followsymlink">&quot;FollowSymlink&quot;</a></h3>
 <p><strong>YAML:</strong> <code>FollowSymlink</code></p>
 <p>Follow the symlink under focus to its actual location.</p>
-<h3 id="-updateinputbuffer--a-hrefmessagehtmlinputoperationinput-opertaiona-"><a class="header" href="#-updateinputbuffer--a-hrefmessagehtmlinputoperationinput-opertaiona-">{ UpdateInputBuffer = <a href="message.html#inputoperation">Input Opertaion</a> }</a></h3>
+<h3 id="-updateinputbuffer--input-opertaion-"><a class="header" href="#-updateinputbuffer--input-opertaion-">{ UpdateInputBuffer = <a href="message.html#inputoperation">Input Opertaion</a> }</a></h3>
 <p><strong>YAML:</strong> <code>BufferInput: Input Operation</code></p>
 <p>Update the input buffer using cursor based operations.</p>
 <p><strong>YAML Example:</strong> <code>UpdateInputBuffer: GoToPreviousWord</code></p>
@@ -1503,9 +1506,8 @@ stderr will be piped to null. So it's non-interactive.</p>
 <p><strong>Lua Example:</strong> <code>{ BashExecSilently = &quot;tput bell&quot; }</code></p>
 <h3 id="-calllua--string-"><a class="header" href="#-calllua--string-">{ CallLua = &quot;string&quot; }</a></h3>
 <p><strong>YAML:</strong> <code>CallLua: string</code></p>
-<p>Call a Lua function.
-A <a href="message.html#calllua-argument"><code>CallLuaArg</code></a> object will be passed to the
-<a href="message.html#lua-function-calls">function</a> as argument.
+<p>Call a Lua function.</p>
+<p>A <a href="message.html#lua-context">Lua Context</a> object will be passed to the <a href="message.html#lua-function-calls">function</a> as argument.
 The function can optionally return a list of messages for xplr to handle
 after the executing the function.</p>
 <p><strong>YAML Example:</strong> <code>CallLua: custom.some_custom_funtion</code></p>
@@ -1518,10 +1520,13 @@ stderr will be piped to null. So it's non-interactive.</p>
 <p><strong>Lua Example:</strong> <code>{ CallLuaSilently = &quot;custom.some_custom_function&quot; }</code></p>
 <h3 id="-luaeval--string-"><a class="header" href="#-luaeval--string-">{ LuaEval = &quot;string&quot; }</a></h3>
 <p><strong>YAML:</strong> <code>LuaEval: string</code></p>
-<p>Execute Lua code without needing to define a function.
-However, <code>CallLuaArg</code> won't be available.</p>
-<p><strong>YAML Example:</strong> <code>LuaEval: &quot;return { { LogInfo = io.read() } }&quot;</code></p>
-<p><strong>Lua Example:</strong> <code>{ LuaEval = [[return { { LogInfo = io.read() } }]] }</code></p>
+<p>Execute Lua code without needing to define a function.</p>
+<p>If the <code>string</code> is a callable, xplr will try to call it with with the
+<a href="message.html#lua-context">Lua Context</a> argument.</p>
+<p><strong>YAML Example:</strong> <code>LuaEval: &quot;return { { LogInfo = io.read() } }&quot;</code>
+<strong>YAML Example:</strong> <code>LuaEval: &quot;function(app) return { { LogInfo = app.pwd } } end&quot;</code></p>
+<p><strong>Lua Example:</strong> <code>{ LuaEval = [[return { { LogInfo = io.read() } }]] }</code>
+<strong>Lua Example:</strong> <code>{ LuaEval = [[function(app) return { { LogInfo = app.pwd } } end]] }</code></p>
 <h3 id="-luaevalsilently--string-"><a class="header" href="#-luaevalsilently--string-">{ LuaEvalSilently = &quot;string&quot; }</a></h3>
 <p><strong>YAML:</strong> <code>LuaEvalSilently: string</code></p>
 <p>Like <code>LuaEval</code> but without the flicker. The stdin, stdout
@@ -1564,27 +1569,27 @@ stderr will be piped to null. So it's non-interactive.</p>
 <h3 id="clearselection"><a class="header" href="#clearselection">&quot;ClearSelection&quot;</a></h3>
 <p><strong>YAML:</strong> <code>ClearSelection</code></p>
 <p>Clear the selection.</p>
-<h3 id="-addnodefilter---filter--a-hreffilteringhtmlfilterfiltera-input--string-"><a class="header" href="#-addnodefilter---filter--a-hreffilteringhtmlfilterfiltera-input--string-">{ AddNodeFilter = { filter = <a href="filtering.html#filter">Filter</a>, input = &quot;string&quot; }</a></h3>
+<h3 id="-addnodefilter---filter--filter-input--string-"><a class="header" href="#-addnodefilter---filter--filter-input--string-">{ AddNodeFilter = { filter = <a href="filtering.html#filter">Filter</a>, input = &quot;string&quot; }</a></h3>
 <p><strong>YAML:</strong> <code>AddNodeFilter: { filter = Filter, input = string }</code></p>
 <p>Add a <a href="filtering.html">filter</a> to exclude nodes while exploring directories.</p>
 <p><strong>YAML Example:</strong> <code>AddNodeFilter: { filter: RelativePathDoesStartWith, input: foo }</code></p>
 <p><strong>Lua Example:</strong> <code>{ AddNodeFilter = { filter = &quot;RelativePathDoesStartWith&quot;, input = &quot;foo&quot; } }</code></p>
-<h3 id="-removenodefilter---filter--a-hreffilteringhtmlfilterfiltera-input--string-"><a class="header" href="#-removenodefilter---filter--a-hreffilteringhtmlfilterfiltera-input--string-">{ RemoveNodeFilter = { filter = <a href="filtering.html#filter">Filter</a>, input = &quot;string&quot; }</a></h3>
+<h3 id="-removenodefilter---filter--filter-input--string-"><a class="header" href="#-removenodefilter---filter--filter-input--string-">{ RemoveNodeFilter = { filter = <a href="filtering.html#filter">Filter</a>, input = &quot;string&quot; }</a></h3>
 <p><strong>YAML:</strong> <code>RemoveNodeFilter: { filter = Filter, input = string</code></p>
 <p>Remove an existing <a href="filtering.html">filter</a>.</p>
 <p><strong>YAML Example:</strong> <code>RemoveNodeFilter: { filter: RelativePathDoesStartWith, input: foo }</code></p>
 <p><strong>Lua Example:</strong> <code>{ RemoveNodeFilter: { filter: &quot;RelativePathDoesStartWith&quot;, input: &quot;foo&quot; } }</code></p>
-<h3 id="-togglenodefilter---filter--a-hreffilteringhtmlfilterfiltera-input--string-"><a class="header" href="#-togglenodefilter---filter--a-hreffilteringhtmlfilterfiltera-input--string-">{ ToggleNodeFilter = { filter = <a href="filtering.html#filter">Filter</a>, input = &quot;string&quot; }</a></h3>
+<h3 id="-togglenodefilter---filter--filter-input--string-"><a class="header" href="#-togglenodefilter---filter--filter-input--string-">{ ToggleNodeFilter = { filter = <a href="filtering.html#filter">Filter</a>, input = &quot;string&quot; }</a></h3>
 <p><strong>YAML:</strong> <code>ToggleNodeFilter: { filter = Filter, input = string }</code></p>
 <p>Remove a <a href="filtering.html">filter</a> if it exists, else, add a it.</p>
 <p><strong>YAML Example:</strong> <code>ToggleNodeFilter: { filter: RelativePathDoesStartWith, input: foo }</code></p>
 <p><strong>Lua Example:</strong> <code>{ ToggleNodeFilter = { filter = &quot;RelativePathDoesStartWith&quot;, input = &quot;foo&quot; } }</code></p>
-<h3 id="-addnodefilterfrominput--a-hreffilteringhtmlfilterfiltera-"><a class="header" href="#-addnodefilterfrominput--a-hreffilteringhtmlfilterfiltera-">{ AddNodeFilterFromInput = <a href="filtering.html#filter">Filter</a> }</a></h3>
+<h3 id="-addnodefilterfrominput--filter-"><a class="header" href="#-addnodefilterfrominput--filter-">{ AddNodeFilterFromInput = <a href="filtering.html#filter">Filter</a> }</a></h3>
 <p><strong>YAML:</strong> <code>AddNodeFilterFromInput: Filter</code></p>
 <p>Add a node <a href="filtering.html">filter</a> reading the input from the buffer.</p>
 <p><strong>YAML Example:</strong> <code>AddNodeFilterFromInput: RelativePathDoesStartWith</code></p>
 <p><strong>Lua Example:</strong> <code>{ AddNodeFilterFromInput = &quot;RelativePathDoesStartWith&quot; }</code></p>
-<h3 id="-removenodefilterfrominput--a-hreffilteringhtmlfilterfiltera-"><a class="header" href="#-removenodefilterfrominput--a-hreffilteringhtmlfilterfiltera-">{ RemoveNodeFilterFromInput = <a href="filtering.html#filter">Filter</a> }</a></h3>
+<h3 id="-removenodefilterfrominput--filter-"><a class="header" href="#-removenodefilterfrominput--filter-">{ RemoveNodeFilterFromInput = <a href="filtering.html#filter">Filter</a> }</a></h3>
 <p><strong>YAML:</strong> <code>RemoveNodeFilterFromInput: Filter</code></p>
 <p>Remove a node <a href="filtering.html">filter</a> reading the input from the buffer.</p>
 <p><strong>YAML Example:</strong> <code>RemoveNodeFilterFromInput: RelativePathDoesStartWith</code></p>
@@ -1598,22 +1603,22 @@ stderr will be piped to null. So it's non-interactive.</p>
 <h3 id="clearnodefilters"><a class="header" href="#clearnodefilters">&quot;ClearNodeFilters&quot;</a></h3>
 <p><strong>YAML:</strong> <code>ClearNodeFilters</code></p>
 <p>Clear all the node <a href="filtering.html">filters</a>.</p>
-<h3 id="-addnodesorter---sorter--a-hrefsortinghtmlsortersortera-reverse--bool--"><a class="header" href="#-addnodesorter---sorter--a-hrefsortinghtmlsortersortera-reverse--bool--">{ AddNodeSorter = { sorter = <a href="sorting.html#sorter">Sorter</a>, reverse = bool } }</a></h3>
+<h3 id="-addnodesorter---sorter--sorter-reverse--bool--"><a class="header" href="#-addnodesorter---sorter--sorter-reverse--bool--">{ AddNodeSorter = { sorter = <a href="sorting.html#sorter">Sorter</a>, reverse = bool } }</a></h3>
 <p><strong>YAML:</strong> <code>AddNodeSorter: { sorter: Sorter, reverse = bool }</code></p>
 <p>Add a <a href="sorting.html#sorter">sorter</a> to sort nodes while exploring directories.</p>
 <p><strong>YAML Example:</strong> <code>AddNodeSorter: { sorter: ByRelativePath, reverse: false }</code></p>
 <p><strong>YAML Example:</strong> <code>{ AddNodeSorter = { sorter = &quot;ByRelativePath&quot;, reverse = false } }</code></p>
-<h3 id="-removenodesorter--a-hrefsortinghtmlsortersortera-"><a class="header" href="#-removenodesorter--a-hrefsortinghtmlsortersortera-">{ RemoveNodeSorter = <a href="sorting.html#sorter">Sorter</a> }</a></h3>
+<h3 id="-removenodesorter--sorter-"><a class="header" href="#-removenodesorter--sorter-">{ RemoveNodeSorter = <a href="sorting.html#sorter">Sorter</a> }</a></h3>
 <p><strong>YAML:</strong> <code>RemoveNodeSorter: Sorter</code></p>
 <p>Remove an existing <a href="sorting.html#sorter">sorter</a>.</p>
 <p><strong>YAML Example:</strong> <code>RemoveNodeSorter: ByRelativePath</code></p>
 <p><strong>Lua Example:</strong> <code>{ RemoveNodeSorter = &quot;ByRelativePath&quot; }</code></p>
-<h3 id="-reversenodesorter--a-hrefsortinghtmlsortersortera-"><a class="header" href="#-reversenodesorter--a-hrefsortinghtmlsortersortera-">{ ReverseNodeSorter = <a href="sorting.html#sorter">Sorter</a> }</a></h3>
+<h3 id="-reversenodesorter--sorter-"><a class="header" href="#-reversenodesorter--sorter-">{ ReverseNodeSorter = <a href="sorting.html#sorter">Sorter</a> }</a></h3>
 <p><strong>YAML:</strong> <code>ReverseNodeSorter: Sorter</code></p>
 <p>Reverse a node <a href="sorting.html#sorter">sorter</a>.</p>
 <p><strong>YAML Example:</strong> <code>ReverseNodeSorter: ByRelativePath</code></p>
 <p><strong>Lua Example:</strong> <code>{ ReverseNodeSorter = &quot;ByRelativePath&quot; }</code></p>
-<h3 id="-togglenodesorter---sorter--a-hrefsortinghtmlsortersortera-reverse--bool--"><a class="header" href="#-togglenodesorter---sorter--a-hrefsortinghtmlsortersortera-reverse--bool--">{ ToggleNodeSorter = { sorter = <a href="sorting.html#sorter">Sorter</a>, reverse = bool } }</a></h3>
+<h3 id="-togglenodesorter---sorter--sorter-reverse--bool--"><a class="header" href="#-togglenodesorter---sorter--sorter-reverse--bool--">{ ToggleNodeSorter = { sorter = <a href="sorting.html#sorter">Sorter</a>, reverse = bool } }</a></h3>
 <p><strong>YAML:</strong> <code>ToggleNodeSorter: { sorter: Sorter, reverse = bool }</code></p>
 <p>Remove a <a href="sorting.html#sorter">sorter</a> if it exists, else, add a it.</p>
 <p><strong>YAML Example:</strong> <code>ToggleSorterSorter: {sorter: ByRelativePath, reverse: false }</code></p>
@@ -1719,16 +1724,15 @@ the default configuration file.</p>
 <h2 id="lua-function-calls"><a class="header" href="#lua-function-calls">Lua Function Calls</a></h2>
 <p>xplr allows users to define lua functions using the <code>xplr.fn.custom</code> Lua API.</p>
 <p>These functions can be called using messages like <code>CallLua</code>, <code>CallLuaSilently</code>.</p>
-<p>When called the function receives a <a href="message.html#calllua-argument">special argument</a> that
+<p>When called the function receives a <a href="message.html#lua-context">special argument</a> that
 contains some useful information. The function can optionally return a list of
 messages which will be handled by xplr.</p>
-<h3 id="calllua-argument"><a class="header" href="#calllua-argument">CallLua Argument</a></h3>
+<h3 id="lua-context"><a class="header" href="#lua-context">Lua Context</a></h3>
 <p>This is a special argument passed to the lua functions when called using the
 <code>CallLua</code>, <code>CallLuaSilently</code> messages.</p>
 <p>It contains the following information:</p>
 <ul>
 <li><a href="message.html#version">version</a></li>
-<li><a href="message.html#config">config</a></li>
 <li><a href="message.html#pwd">pwd</a></li>
 <li><a href="message.html#focused_node">focused_node</a></li>
 <li><a href="message.html#directory_buffer">directory_buffer</a></li>
@@ -1745,9 +1749,6 @@ messages which will be handled by xplr.</p>
 <h3 id="version"><a class="header" href="#version">version</a></h3>
 <p>Type: string</p>
 <p>xplr version. Can be used to test compatibility.</p>
-<h3 id="config-1"><a class="header" href="#config-1">config</a></h3>
-<p>Type: <a href="configuration.html#config">Config</a></p>
-<p>The loaded configuration.</p>
 <h3 id="pwd"><a class="header" href="#pwd">pwd</a></h3>
 <p>Type: string</p>
 <p>The present working directory/</p>
@@ -1755,7 +1756,7 @@ messages which will be handled by xplr.</p>
 <p>Type: nullable <a href="message.html#node">Node</a></p>
 <p>The node under focus.</p>
 <h3 id="directory_buffer"><a class="header" href="#directory_buffer">directory_buffer</a></h3>
-<p>Type: nullable <a href="message.html#directorybuffer">DirectoryBuffer</a></p>
+<p>Type: nullable <a href="message.html#directory-buffer">Directory Buffer</a></p>
 <p>The directory buffer being rendered.</p>
 <h3 id="selection"><a class="header" href="#selection">selection</a></h3>
 <p>Type: list of selected <a href="message.html#node">Node</a>s</p>
@@ -1851,7 +1852,7 @@ node. It will instead be null.</p>
 <li><a href="message.html#canonical">canonical</a></li>
 <li><a href="message.html#symlink">symlink</a></li>
 </ul>
-<h3 id="directorybuffer"><a class="header" href="#directorybuffer">DirectoryBuffer</a></h3>
+<h3 id="directory-buffer"><a class="header" href="#directory-buffer">Directory Buffer</a></h3>
 <p>Directory buffer contains the following fields:</p>
 <ul>
 <li><a href="message.html#parent">parent</a></li>
@@ -2232,7 +2233,11 @@ It contains the following fields:</p>
 }
 
 xplr.fn.custom.render_layout = function(ctx)
-  return ctx.app.history.paths
+  return {
+    ctx.app.pwd,
+    ctx.app.version,
+    tostring(ctx.app.pid),
+  }
 end
 </code></pre>
 <h3 id="static-table"><a class="header" href="#static-table">Static Table</a></h3>
@@ -2307,9 +2312,9 @@ content body for the custom dynamic layouts.</p>
 <ul>
 <li><a href="layouts.html#size">layout_size</a></li>
 <li><a href="layouts.html#size">screen_size</a></li>
-<li><a href="message.html#calllua-argument">app</a></li>
+<li><a href="layouts.html#app">app</a></li>
 </ul>
-<h2 id="size-1"><a class="header" href="#size-1">Size</a></h2>
+<h3 id="size-1"><a class="header" href="#size-1">Size</a></h3>
 <p>It contains the following information:</p>
 <ul>
 <li>x</li>
@@ -2318,6 +2323,23 @@ content body for the custom dynamic layouts.</p>
 <li>width</li>
 </ul>
 <p>Every field is of integer type.</p>
+<h3 id="app"><a class="header" href="#app">app</a></h3>
+<p>This is a lightweight version of the <a href="message.html#lua-context">Lua Context</a>. In this context, the 
+heavyweight fields like <a href="message.html#directory_buffer">directory_buffer</a> are omitted for performance
+reasons.</p>
+<p>Hence, only the following fields are avilable.</p>
+<ul>
+<li><a href="message.html#version">version</a></li>
+<li><a href="message.html#pwd">pwd</a></li>
+<li><a href="message.html#focused_node">focused_node</a></li>
+<li><a href="message.html#selection">selection</a></li>
+<li><a href="message.html#mode">mode</a></li>
+<li><a href="message.html#layout">layout</a></li>
+<li><a href="message.html#input_buffer">input_buffer</a></li>
+<li><a href="message.html#pid">pid</a></li>
+<li><a href="message.html#session_path">session_path</a></li>
+<li><a href="message.html#explorer_config">explorer_config</a></li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="node-types"><a class="header" href="#node-types">Node Types</a></h1>
 <p>This configuration defines how to deal with different kinds of nodes (files,
 directories, symlinks etc.) in a directory.</p>
@@ -2869,42 +2891,41 @@ of the following plugins work for you, it's very easy to
 </ul>
 <h2 id="extension-3"><a class="header" href="#extension-3">Extension</a></h2>
 <ul>
-<li><a href="https://github.com/sayanarijit/comex.xplr"><strong>comex.xplr</strong></a> One xplr plugin to compress and extract them all.</li>
-<li><a href="https://github.com/sayanarijit/command-mode.xplr"><strong>command-mode.xplr</strong></a> The missing command mode for xplr.</li>
-<li><a href="https://github.com/igorepst/context-switch.xplr"><strong>context-switch.xplr</strong></a> Context switch plugin for xplr.</li>
-<li><a href="https://github.com/sayanarijit/map.xplr"><strong>map.xplr</strong></a> Visually inspect and interactively execute batch commands using xplr.</li>
-<li><a href="https://github.com/prncss-xyz/type-to-nav.xplr"><strong>type-to-nav.xplr</strong></a> Inspired by <a href="https://github.com/jarun/nnn/wiki/concepts#type-to-nav">nnn's type-to-nav mode</a> for xplr,
+<li><a href="https://github.com/sayanarijit/command-mode.xplr"><strong>sayanarijit/command-mode.xplr</strong></a> The missing command mode for xplr.</li>
+<li><a href="https://github.com/igorepst/context-switch.xplr"><strong>igorepst/context-switch.xplr</strong></a> Context switch plugin for xplr.</li>
+<li><a href="https://github.com/sayanarijit/map.xplr"><strong>sayanarijit/map.xplr</strong></a> Visually inspect and interactively execute batch commands using xplr.</li>
+<li><a href="https://github.com/prncss-xyz/type-to-nav.xplr"><strong>prncss-xyz/type-to-nav.xplr</strong></a> Inspired by <a href="https://github.com/jarun/nnn/wiki/concepts#type-to-nav">nnn's type-to-nav mode</a> for xplr,
 with some tweaks.</li>
-<li><a href="https://github.com/igorepst/term.xplr"><strong>term.xplr</strong></a> Terminal integration for xplr </li>
+<li><a href="https://github.com/igorepst/term.xplr"><strong>igorepst/term.xplr</strong></a> Terminal integration for xplr</li>
 </ul>
 <h2 id="integration"><a class="header" href="#integration">Integration</a></h2>
 <ul>
-<li><a href="https://github.com/sayanarijit/alacritty.xplr"><strong>alacritty.xplr</strong></a> <a href="https://github.com/alacritty/alacritty">Alacritty</a> integration for xplr.</li>
-<li><a href="https://github.com/sayanarijit/dragon.xplr"><strong>dragon.xplr</strong></a> Drag and drop files using <a href="https://github.com/mwh/dragon">dragon</a>.</li>
-<li><a href="https://github.com/sayanarijit/dua-cli.xplr"><strong>dua-cli.xplr</strong></a> Get the disk usage using <a href="https://github.com/Byron/dua-cli">dua-cli</a> with selection
+<li><a href="https://github.com/sayanarijit/alacritty.xplr"><strong>sayanarijit/alacritty.xplr</strong></a> <a href="https://github.com/alacritty/alacritty">Alacritty</a> integration for xplr.</li>
+<li><a href="https://github.com/sayanarijit/dragon.xplr"><strong>sayanarijit/dragon.xplr</strong></a> Drag and drop files using <a href="https://github.com/mwh/dragon">dragon</a>.</li>
+<li><a href="https://github.com/sayanarijit/dua-cli.xplr"><strong>sayanarijit/dua-cli.xplr</strong></a> Get the disk usage using <a href="https://github.com/Byron/dua-cli">dua-cli</a> with selection
 support.</li>
-<li><a href="https://github.com/sayanarijit/fzf.xplr"><strong>fzf.xplr</strong></a> Fuzzy search using <a href="https://github.com/junegunn/fzf">fzf</a> to focus on a file or enter
+<li><a href="https://github.com/sayanarijit/fzf.xplr"><strong>sayanarijit/fzf.xplr</strong></a> Fuzzy search using <a href="https://github.com/junegunn/fzf">fzf</a> to focus on a file or enter
 into a directory.</li>
-<li><a href="https://github.com/sayanarijit/nvim-ctrl.xplr"><strong>nvim-ctrl.xplr</strong></a> Send files to running Neovim sessions using
+<li><a href="https://github.com/sayanarijit/nvim-ctrl.xplr"><strong>sayanarijit/nvim-ctrl.xplr</strong></a> Send files to running Neovim sessions using
 <a href="https://github.com/chmln/nvim-ctrl">nvim-ctrl</a>.</li>
-<li><a href="https://github.com/dtomvan/ouch.xplr"><strong>ouch.xplr</strong></a> This plugin uses <a href="https://github.com/ouch-org/ouch">ouch</a> to compress and decompress files.</li>
-<li><a href="https://github.com/dtomvan/paste-rs.xplr"><strong>paste-rs.xplr</strong></a> Use this plugin to paste your files to
+<li><a href="https://github.com/dtomvan/ouch.xplr"><strong>dtomvan/ouch.xplr</strong></a> This plugin uses <a href="https://github.com/ouch-org/ouch">ouch</a> to compress and decompress files.</li>
+<li><a href="https://github.com/dtomvan/paste-rs.xplr"><strong>dtomvan/paste-rs.xplr</strong></a> Use this plugin to paste your files to
 <a href="https://paste.rs">paste.rs</a>, and open/delete them later using <a href="https://github.com/junegunn/fzf">fzf</a>.</li>
-<li><a href="https://github.com/sayanarijit/preview-tabbed.xplr"><strong>preview-tabbed.xplr</strong></a> Preview paths using suckless <a href="https://tools.suckless.org/tabbed/">tabbed</a> and
+<li><a href="https://github.com/sayanarijit/preview-tabbed.xplr"><strong>sayanarijit/preview-tabbed.xplr</strong></a> Preview paths using suckless <a href="https://tools.suckless.org/tabbed/">tabbed</a> and
 <a href="https://github.com/jarun/nnn/blob/master/plugins/preview-tabbed">nnn preview-tabbed</a>.</li>
-<li><a href="https://github.com/sayanarijit/qrcp.xplr"><strong>qrcp.xplr</strong></a> Send and receive files via QR code using <a href="https://github.com/claudiodangelis/qrcp">qrcp</a>.</li>
-<li><a href="https://github.com/sayanarijit/trash-cli.xplr"><strong>trash-cli.xplr</strong></a> Trash files and directories using <a href="https://github.com/andreafrancia/trash-cli">trash-cli</a>.</li>
-<li><a href="https://github.com/sayanarijit/xargs.xplr"><strong>xargs.xplr</strong></a> Batch execute commands on the focused or selected files
+<li><a href="https://github.com/sayanarijit/qrcp.xplr"><strong>sayanarijit/qrcp.xplr</strong></a> Send and receive files via QR code using <a href="https://github.com/claudiodangelis/qrcp">qrcp</a>.</li>
+<li><a href="https://github.com/sayanarijit/trash-cli.xplr"><strong>sayanarijit/trash-cli.xplr</strong></a> Trash files and directories using <a href="https://github.com/andreafrancia/trash-cli">trash-cli</a>.</li>
+<li><a href="https://github.com/sayanarijit/xargs.xplr"><strong>sayanarijit/xargs.xplr</strong></a> Batch execute commands on the focused or selected files
 using <code>xargs</code>.</li>
-<li><a href="https://github.com/sayanarijit/xclip.xplr"><strong>xclip.xplr</strong></a> Copy and paste with system clipboard using <a href="https://github.com/astrand/xclip">xclip</a>.</li>
-<li><a href="https://github.com/sayanarijit/zoxide.xplr"><strong>zoxide.xplr</strong></a> Change directory using the <a href="https://github.com/ajeetdsouza/zoxide">zoxide</a> database.</li>
+<li><a href="https://github.com/sayanarijit/xclip.xplr"><strong>sayanarijit/xclip.xplr</strong></a> Copy and paste with system clipboard using <a href="https://github.com/astrand/xclip">xclip</a>.</li>
+<li><a href="https://github.com/sayanarijit/zoxide.xplr"><strong>sayanarijit/zoxide.xplr</strong></a> Change directory using the <a href="https://github.com/ajeetdsouza/zoxide">zoxide</a> database.</li>
 </ul>
 <h2 id="theme"><a class="header" href="#theme">Theme</a></h2>
 <ul>
-<li><a href="https://github.com/sayanarijit/material-landscape.xplr"><strong>material-landscape.xplr</strong></a> Material Landscape</li>
-<li><a href="https://github.com/sayanarijit/material-landscape2.xplr"><strong>material-landscape2.xplr</strong></a> Material Landscape 2</li>
-<li><a href="https://github.com/sayanarijit/zentable.xplr"><strong>zentable.xplr</strong></a> A clean, distraction free xplr table UI</li>
-<li><a href="https://github.com/prncss-xyz/icons.xplr"><strong>icons.xplr</strong></a> An icon theme for xplr.</li>
+<li><a href="https://github.com/sayanarijit/material-landscape.xplr"><strong>sayanarijit/material-landscape.xplr</strong></a> Material Landscape</li>
+<li><a href="https://github.com/sayanarijit/material-landscape2.xplr"><strong>sayanarijit/material-landscape2.xplr</strong></a> Material Landscape 2</li>
+<li><a href="https://github.com/sayanarijit/zentable.xplr"><strong>sayanarijit/zentable.xplr</strong></a> A clean, distraction free xplr table UI</li>
+<li><a href="https://github.com/prncss-xyz/icons.xplr"><strong>prncss-xyz/icons.xplr</strong></a> An icon theme for xplr.</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="integration-1"><a class="header" href="#integration-1">Integration</a></h1>
 <p>xplr is designed to integrate well with other tools and commands. It can be
@@ -3036,7 +3057,21 @@ e.g. <code>app-1.0.0</code> with <code>config-1.1.0</code>. But vice versa is fi
 compatibility.</p>
 </details>
 <h3 id="instructions"><a class="header" href="#instructions">Instructions</a></h3>
-<h4 id="a-hrefhttpsgithubcomsayanarijitxplrreleasestagv0152v0152a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv0164v0164a"><a class="header" href="#a-hrefhttpsgithubcomsayanarijitxplrreleasestagv0152v0152a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv0164v0164a"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.15.2">v0.15.2</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.16.4">v0.16.4</a></a></h4>
+<h4 id="v0164---v0170"><a class="header" href="#v0164---v0170"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.16.4">v0.16.4</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.17.0">v0.17.0</a></a></h4>
+<ul>
+<li>Deprecated <code>app.directory_buffer</code>, <code>app.history</code>, and <code>app.last_modes</code> in
+the custom dynamic layout renderer context.
+As of now, there's no way to access these fields in dynamic layouts. While
+<code>app.history</code> and <code>app.last_modes</code> can be re-added upon request
+(with justification), <code>app.directory_buffer</code> has been deprecated for good.
+However, there's no change in the <code>CallLua*</code> context.</li>
+<li>Set <code>xplr.config.general.hide_remaps_in_help_menu</code> to <code>true</code> to hide the remaps in
+help menu.</li>
+<li><code>None</code> will be serialized to <code>nil</code> in Lua.</li>
+<li><code>LuaEval</code> can now return a function that will be called with the Lua Context
+argument. Refer to the <code>Full List of Messages</code> doc for example.</li>
+</ul>
+<h4 id="v0152---v0164"><a class="header" href="#v0152---v0164"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.15.2">v0.15.2</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.16.4">v0.16.4</a></a></h4>
 <ul>
 <li>Deprecated <code>config.general.cursor</code>. The default terminal cursor will be used
 for the time being.</li>
@@ -3061,7 +3096,7 @@ needing to define a function. However, the <code>app</code> context won't be ava
 </li>
 </ul>
 <p><sub>Like this project so far? <strong><a href="contribute.html">Please consider contributing</a></strong>.</sub></p>
-<h4 id="a-hrefhttpsgithubcomsayanarijitxplrreleasestagv0147v0147a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv0152v0152a"><a class="header" href="#a-hrefhttpsgithubcomsayanarijitxplrreleasestagv0147v0147a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv0152v0152a"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.14.7">v0.14.7</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.15.2">v0.15.2</a></a></h4>
+<h4 id="v0147---v0152"><a class="header" href="#v0147---v0152"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.14.7">v0.14.7</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.15.2">v0.15.2</a></a></h4>
 <ul>
 <li>Deprecated <code>config</code> field from <code>CallLua</code> argument. Use the globally available
 <code>xplr.config</code> instead.</li>
@@ -3076,7 +3111,7 @@ different modes without resetting the input buffer.</li>
 mode.</li>
 <li>Library users please refer to the latest API docs and examples.</li>
 </ul>
-<h4 id="a-hrefhttpsgithubcomsayanarijitxplrreleasestagv0137v0137a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv0147v0147a"><a class="header" href="#a-hrefhttpsgithubcomsayanarijitxplrreleasestagv0137v0137a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv0147v0147a"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.13.7">v0.13.7</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.14.7">v0.14.7</a></a></h4>
+<h4 id="v0137---v0147"><a class="header" href="#v0137---v0147"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.13.7">v0.13.7</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.14.7">v0.14.7</a></a></h4>
 <ul>
 <li>macOS users need to place their config file (<code>init.lua</code>) in
 <code>$HOME/.config/xplr/</code> or <code>/etc/xplr/</code>.</li>
@@ -3094,18 +3129,18 @@ related data.</li>
 <li>Since version <code>v0.14.6</code>, the <code>-C</code> or <code>--extra-config</code> CLI argument is
 available.</li>
 </ul>
-<h4 id="a-hrefhttpsgithubcomsayanarijitxplrreleasestagv0121v0121a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv0137v0137a"><a class="header" href="#a-hrefhttpsgithubcomsayanarijitxplrreleasestagv0121v0121a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv0137v0137a"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.12.1">v0.12.1</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.13.7">v0.13.7</a></a></h4>
+<h4 id="v0121---v0137"><a class="header" href="#v0121---v0137"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.12.1">v0.12.1</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.13.7">v0.13.7</a></a></h4>
 <ul>
 <li>Lua functions called using <a href="https://docs.rs/xplr/latest/xplr/app/enum.ExternalMsg.html#variant.CallLua"><code>CallLua</code></a> and <a href="https://docs.rs/xplr/latest/xplr/app/enum.ExternalMsg.html#variant.CallLuaSilently"><code>CallLuaSilently</code></a> messages will receive <a href="https://docs.rs/xplr/latest/xplr/app/struct.CallLuaArg.html"><code>CallLuaArg</code></a> object as the function argument (instead of the <a href="https://docs.rs/xplr/latest/xplr/app/struct.App.html"><code>App</code></a> object).</li>
 <li>Each <code>node_types</code> config will inherit defaults from matching less specifig <code>node_types</code> config and overwrite them.</li>
 <li>Since version <code>v0.13.2</code>, you don't need to use/send <code>Refresh</code> anymore. It will be auto-handled by xplr.</li>
 </ul>
-<h4 id="a-hrefhttpsgithubcomsayanarijitxplrreleasestagv0111v0111a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv0121v0121a"><a class="header" href="#a-hrefhttpsgithubcomsayanarijitxplrreleasestagv0111v0111a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv0121v0121a"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.11.1">v0.11.1</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.12.1">v0.12.1</a></a></h4>
+<h4 id="v0111---v0121"><a class="header" href="#v0111---v0121"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.11.1">v0.11.1</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.12.1">v0.12.1</a></a></h4>
 <ul>
 <li><code>xplr.config.node_types.mime_essence</code> has split into type and subtype. Hence, instead of <code>xplr.config.node_types.mime_essence[&quot;text/plain&quot;] = ..</code> use <code>xplr.config.node_types.mime_essence[&quot;text&quot;] = { plain = .. }</code>.</li>
 <li>You can also define <code>xplr.config.node_types.mime_essence[&quot;text&quot;][&quot;*&quot;]</code> that will match all text types (<code>text/*</code>).</li>
 </ul>
-<h4 id="a-hrefhttpsgithubcomsayanarijitxplrreleasestagv0102v0102a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv0111v0111a"><a class="header" href="#a-hrefhttpsgithubcomsayanarijitxplrreleasestagv0102v0102a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv0111v0111a"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.10.2">v0.10.2</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.11.1">v0.11.1</a></a></h4>
+<h4 id="v0102---v0111"><a class="header" href="#v0102---v0111"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.10.2">v0.10.2</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.11.1">v0.11.1</a></a></h4>
 <ul>
 <li><code>remaps:</code> has been removed to avoid confusion. Use lua assignments instead.
 For e.g.
@@ -3113,19 +3148,19 @@ For e.g.
 </code></pre>
 </li>
 </ul>
-<h4 id="a-hrefhttpsgithubcomsayanarijitxplrreleasestagv091v091a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv0102v0102a"><a class="header" href="#a-hrefhttpsgithubcomsayanarijitxplrreleasestagv091v091a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv0102v0102a"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.9.1">v0.9.1</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.10.2">v0.10.2</a></a></h4>
+<h4 id="v091---v0102"><a class="header" href="#v091---v0102"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.9.1">v0.9.1</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.10.2">v0.10.2</a></a></h4>
 <ul>
 <li><a href="https://github.com/sayanarijit/xplr/blob/85696ded7a/src/config.yml"><code>config.yml</code></a> has been fully replaced with <a href="https://github.com/sayanarijit/xplr/blob/main/src/init.lua"><code>init.lua</code></a>. If you have a lot of customization in your <code>config.yml</code>, <a href="https://github.com/sayanarijit/xplr-yml2lua">xplr-yml2lua</a> can help you with migrating it to <code>init.lua</code>.</li>
 <li><code>Handlebars</code> templates has been replaced with <a href="https://github.com/sayanarijit/xplr/blob/bfdb7736b99bc3c5ae53e7d621ba0e7ca2299b14/src/init.lua#L2005-L2064">Lua functions</a>. You can either remove the customizations or overwrite the functions accordingly.</li>
 <li>Added new messages <code>CallLua</code> and <code>CallLuaSilently</code> to call lua functions. The app state will be passed as input to the functions, and the returned messages will be handled by xplr. <code>CallLua</code> and <code>CallLuaSilently</code> are more flexible (and probably faster) alternatives to <code>Call</code>, <code>CallSilently</code>, <code>BashExec</code> and <code>BashExecSilently</code>. <a href="https://github.com/sayanarijit/xplr/pull/177#issue-650643573">e.g.</a></li>
 </ul>
-<h4 id="a-hrefhttpsgithubcomsayanarijitxplrreleasestagv090v090a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv091v091a"><a class="header" href="#a-hrefhttpsgithubcomsayanarijitxplrreleasestagv090v090a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv091v091a"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.9.0">v0.9.0</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.9.1">v0.9.1</a></a></h4>
+<h4 id="v090---v091"><a class="header" href="#v090---v091"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.9.0">v0.9.0</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.9.1">v0.9.1</a></a></h4>
 <ul>
 <li>You can now set <code>remaps: {key: null}</code> to un-map a key.</li>
 <li><code>gx</code> will open the item under focus.</li>
 <li>New key map <code>:sx</code> will open the selected items.</li>
 </ul>
-<h4 id="a-hrefhttpsgithubcomsayanarijitxplrreleasestagv080v080a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv090v090a"><a class="header" href="#a-hrefhttpsgithubcomsayanarijitxplrreleasestagv080v080a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv090v090a"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.8.0">v0.8.0</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.9.0">v0.9.0</a></a></h4>
+<h4 id="v080---v090"><a class="header" href="#v080---v090"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.8.0">v0.8.0</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.9.0">v0.9.0</a></a></h4>
 <p>Your previous config should mostly work fine. However, in case you are using <code>SwitchMode</code> heavily in your custom config, follow along.</p>
 <ul>
 <li>Introduced new message <code>PopMode</code>. You might want to use this message instead of <code>SwitchMode*</code> when returning back to the previous mode.</li>
@@ -3134,24 +3169,24 @@ For e.g.
 <li>Introduced new message <code>LogWarning</code>, similar to other <code>Log*</code> messages.</li>
 <li>Creating files and directories has been optimized for batch creation.</li>
 </ul>
-<h4 id="a-hrefhttpsgithubcomsayanarijitxplrreleasestagv072v072a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv080v080a"><a class="header" href="#a-hrefhttpsgithubcomsayanarijitxplrreleasestagv072v072a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv080v080a"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.7.2">v0.7.2</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.8.0">v0.8.0</a></a></h4>
+<h4 id="v072---v080"><a class="header" href="#v072---v080"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.7.2">v0.7.2</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.8.0">v0.8.0</a></a></h4>
 <p>If you have made changes to the config file,</p>
 <ul>
 <li>Replace message <code>Explore</code> with <code>ExplorePwd</code> or <code>ExplorePwdAsync</code> or probably <code>ExploreParentsAsync</code>.</li>
 <li>Pipe <code>$XPLR_PIPE_FOCUS_OUT</code> has been removed. Use <code>$XPLR_FOCUS_PATH</code> env var instead.</li>
 <li>You might want to review your path escaping logics. For e.g. use <code>echo FocusPath: &quot;'&quot;$PWD&quot;'&quot; &gt;&gt; $PIPE</code> instead of <code>echo &quot;FocusPath: $PWD&quot; &gt;&gt; $PIPE</code>.</li>
 </ul>
-<h4 id="a-hrefhttpsgithubcomsayanarijitxplrreleasestagv070v070a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv072v072a"><a class="header" href="#a-hrefhttpsgithubcomsayanarijitxplrreleasestagv070v070a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv072v072a"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.7.0">v0.7.0</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.7.2">v0.7.2</a></a></h4>
+<h4 id="v070---v072"><a class="header" href="#v070---v072"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.7.0">v0.7.0</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.7.2">v0.7.2</a></a></h4>
 <ul>
 <li>Just update the <code>version</code> in your config file.</li>
 <li>For version &gt;= <code>v0.7.1</code>, you might want to free up or remap the <code>tab</code> key in <code>search</code> mode to enable easy selection during search.</li>
 </ul>
-<h4 id="a-hrefhttpsgithubcomsayanarijitxplrreleasestagv060v060a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv070v070a"><a class="header" href="#a-hrefhttpsgithubcomsayanarijitxplrreleasestagv060v060a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv070v070a"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.6.0">v0.6.0</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.7.0">v0.7.0</a></a></h4>
+<h4 id="v060---v070"><a class="header" href="#v060---v070"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.6.0">v0.6.0</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.7.0">v0.7.0</a></a></h4>
 <p>If you haven't made any changes in the config file, you should be fine just updating the version number. Else,</p>
 <ul>
 <li>You can make the <code>Table: ...</code>, <code>InputAndLogs: ...</code> layout values null and define the common properties in the <code>general.panel_ui</code> instead.</li>
 </ul>
-<h4 id="a-hrefhttpsgithubcomsayanarijitxplrreleasestagv0513v0513a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv060v060a"><a class="header" href="#a-hrefhttpsgithubcomsayanarijitxplrreleasestagv0513v0513a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv060v060a"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.5.13">v0.5.13</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.6.0">v0.6.0</a></a></h4>
+<h4 id="v0513---v060"><a class="header" href="#v0513---v060"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.5.13">v0.5.13</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.6.0">v0.6.0</a></a></h4>
 <p>If you haven't made any changes in the config file, you should be fine just updating the version number. Else,</p>
 <ul>
 <li>Rename <code>add_modifier: {bits: 1}</code> to <code>add_modifiers: [Bold]</code>, <code>sub_modifier: {bits: 1}</code> to <code>sub_modifiers: [Bold]</code> and so on.</li>
@@ -3159,14 +3194,14 @@ For e.g.
 <li>You might want to free up or remap the <code>ctrl-w</code> key binding in <code>default</code> mode to enable layout switching.</li>
 </ul>
 <p>Optionally, checkout this new theme to learn more about what's new.</p>
-<h4 id="a-hrefhttpsgithubcomsayanarijitxplrreleasestagv050v050a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv0513v0513a"><a class="header" href="#a-hrefhttpsgithubcomsayanarijitxplrreleasestagv050v050a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv0513v0513a"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.5.0">v0.5.0</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.5.13">v0.5.13</a></a></h4>
+<h4 id="v050---v0513"><a class="header" href="#v050---v0513"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.5.0">v0.5.0</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.5.13">v0.5.13</a></a></h4>
 <ul>
 <li>Just update the <code>version</code> in your config file.</li>
 <li>For versions &gt;= <code>v0.5.8</code>, you can set <code>$OPENER</code> env var to declare a global GUI file opener (to open files using keys <code>gx</code>).</li>
 <li>You might also want to update other mappings to handle files with names starting with <code>-</code> (hiphen). For example, instead of <code>rm ${filename}</code> use <code>rm -- ${filename}</code>. Same goes for <code>cp</code>, <code>mv</code>, <code>cat</code>, <code>touch</code> etc.</li>
 <li>For version &gt;= <code>v0.5.13</code>, you might want to use the more specific <code>SwitchModeBuiltin</code> and <code>SwitchModeCustom</code> messages instead of the general <code>SwitchMode</code> message.</li>
 </ul>
-<h4 id="a-hrefhttpsgithubcomsayanarijitxplrreleasestagv043v043a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv050v050a"><a class="header" href="#a-hrefhttpsgithubcomsayanarijitxplrreleasestagv043v043a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv050v050a"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.4.3">v0.4.3</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.5.0">v0.5.0</a></a></h4>
+<h4 id="v043---v050"><a class="header" href="#v043---v050"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.4.3">v0.4.3</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.5.0">v0.5.0</a></a></h4>
 <p>If you haven't have any changes in the config file, you should be fine just updating the version number.</p>
 <p>Else do the following</p>
 <ul>
@@ -3178,11 +3213,11 @@ For e.g.
 <li>You might want to use the new UI variables.</li>
 <li>Update your config version to <code>v0.5.0</code>.</li>
 </ul>
-<h4 id="a-hrefhttpsgithubcomsayanarijitxplrreleasestagv042v042a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv043v043a"><a class="header" href="#a-hrefhttpsgithubcomsayanarijitxplrreleasestagv042v042a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv043v043a"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.4.2">v0.4.2</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.4.3">v0.4.3</a></a></h4>
+<h4 id="v042---v043"><a class="header" href="#v042---v043"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.4.2">v0.4.2</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.4.3">v0.4.3</a></a></h4>
 <p>If you have customized <code>general.table.row.cols</code>, you might want to <a href="https://github.com/sayanarijit/xplr/blob/af1cda5762/src/config.yml#L46-L48">update it</a> to use the new variables with better symlink support.</p>
-<h4 id="a-hrefhttpsgithubcomsayanarijitxplrreleasestagv041v041a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv042v042a"><a class="header" href="#a-hrefhttpsgithubcomsayanarijitxplrreleasestagv041v041a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv042v042a"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.4.1">v0.4.1</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.4.2">v0.4.2</a></a></h4>
+<h4 id="v041---v042"><a class="header" href="#v041---v042"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.4.1">v0.4.1</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.4.2">v0.4.2</a></a></h4>
 <p>In case you have mapped the keys <code>q</code>, <code>ctrl-i</code> and <code>ctrl-o</code>, you may want to revisit the default mode key bindings and remap accordingly to use the new functionalities.</p>
-<h4 id="a-hrefhttpsgithubcomsayanarijitxplrreleasestagv0313v0313a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv041v041a"><a class="header" href="#a-hrefhttpsgithubcomsayanarijitxplrreleasestagv0313v0313a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv041v041a"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.3.13">v0.3.13</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.4.1">v0.4.1</a></a></h4>
+<h4 id="v0313---v041"><a class="header" href="#v0313---v041"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.3.13">v0.3.13</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.4.1">v0.4.1</a></a></h4>
 <p>A lot has changed (apologies). But I promise from now on, upgrading will be much less painful (thanks to <a href="https://github.com/maximbaz">@maximbaz</a>'s valuable <a href="https://github.com/sayanarijit/xplr/issues/45#issue-854447104">inputs</a> and <a href="https://github.com/sayanarijit/xplr/pull/47">code reviews</a>).</p>
 <p>So, to start with the upgrade, let's remove everything from your config file except the <code>version</code> field and your custom modifications. If <code>version</code> is the only thing remaining, update it to <code>v0.4.1</code> and you are done.</p>
 <p>Else, do the following</p>
@@ -3195,7 +3230,7 @@ For e.g.
 <li>Split <code>modes</code> into <code>modes.builtin</code> and <code>modes.custom</code> (<a href="https://github.com/sayanarijit/xplr/blob/055c1083d6/src/config.yml#L180-L181">see here</a>). Migrate your custom modes to <code>modes.custom</code>. And copy only the changes in the in-built modes in <code>modes.builtin</code>.</li>
 <li>Finally, update the <code>version</code> to <code>v0.4.1</code>.</li>
 </ul>
-<h4 id="a-hrefhttpsgithubcomsayanarijitxplrreleasestagv038v038a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv0313v0313a"><a class="header" href="#a-hrefhttpsgithubcomsayanarijitxplrreleasestagv038v038a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv0313v0313a"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.3.8">v0.3.8</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.3.13">v0.3.13</a></a></h4>
+<h4 id="v038---v0313"><a class="header" href="#v038---v0313"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.3.8">v0.3.8</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.3.13">v0.3.13</a></a></h4>
 <p>Your current config should work fine. However, you might want to replace some <code>Call</code> and <code>BashExec</code> messages with <code>CallSilently</code> and <code>BashExecSilently</code> to remove the flickering of the screen.</p>
 <p>If you haven't made any changes to the configuration, you can delete and regenerate it.</p>
 <p>Else, do the following</p>
@@ -3204,7 +3239,7 @@ For e.g.
 <li>Search for <code>Call</code> and <code>BashExec</code> in the new config.</li>
 <li>Compare and probably replace the associated actions in your current config</li>
 </ul>
-<h4 id="a-hrefhttpsgithubcomsayanarijitxplrreleasestagv030v030a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv038v038a"><a class="header" href="#a-hrefhttpsgithubcomsayanarijitxplrreleasestagv030v030a---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv038v038a"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.3.0">v0.3.0</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.3.8">v0.3.8</a></a></h4>
+<h4 id="v030---v038"><a class="header" href="#v030---v038"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.3.0">v0.3.0</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.3.8">v0.3.8</a></a></h4>
 <p>Your current config should work fine. However, you might want to replace some <code>ResetNodeFilters</code> messages with <code>RemoveNodeFilter</code> and <code>RemoveNodeFilterFromInput</code> to get a better search and filter experience.</p>
 <p>If you haven't made any changes to the configuration, you can delete and regenerate it.</p>
 <p>Else, do the following</p>
@@ -3213,7 +3248,7 @@ For e.g.
 <li>Search for <code>RemoveNodeFilterFromInput</code> in the new config.</li>
 <li>Compare and probably replace the associated actions in your current config.</li>
 </ul>
-<h4 id="v0214---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv030v030a"><a class="header" href="#v0214---a-hrefhttpsgithubcomsayanarijitxplrreleasestagv030v030a">v0.2.14 -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.3.0">v0.3.0</a></a></h4>
+<h4 id="v0214---v030"><a class="header" href="#v0214---v030">v0.2.14 -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.3.0">v0.3.0</a></a></h4>
 <p>If you haven't made any changes to the configuration, you can delete and regenerate it.</p>
 <p>Else do the following:</p>
 <ul>
