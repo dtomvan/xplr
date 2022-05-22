@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" class="sidebar-visible no-js light">
+<html lang="en" class="sidebar-visible no-js dark">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -10,7 +10,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-        <link rel="icon" href="favicon.svg">
         <link rel="shortcut icon" href="favicon.png">
         <link rel="stylesheet" href="css/variables.css">
         <link rel="stylesheet" href="css/general.css">
@@ -25,12 +24,14 @@
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+        <!-- EthicalAds -->
+        <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
     </head>
     <body>
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
             var path_to_root = "";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "coal" : "dark";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -56,7 +57,7 @@
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
             html.classList.remove('no-js')
-            html.classList.remove('light')
+            html.classList.remove('dark')
             html.classList.add(theme);
             html.classList.add('js');
         </script>
@@ -75,7 +76,16 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="quickstart.html"><strong aria-hidden="true">2.</strong> Quickstart</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install.html"><strong aria-hidden="true">2.1.</strong> Install</a></li><li class="chapter-item expanded "><a href="post-install.html"><strong aria-hidden="true">2.2.</strong> Post Install</a></li></ol></li><li class="chapter-item expanded "><a href="awesome-hacks.html"><strong aria-hidden="true">3.</strong> Awesome Hacks</a></li><li class="chapter-item expanded "><a href="configuration.html"><strong aria-hidden="true">4.</strong> Configuration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="key-bindings.html"><strong aria-hidden="true">4.1.</strong> Key Bindings</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="configure-key-bindings.html"><strong aria-hidden="true">4.1.1.</strong> Configure Key Bindings</a></li><li class="chapter-item expanded "><a href="default-key-bindings.html"><strong aria-hidden="true">4.1.2.</strong> Default Key Bindings</a></li><li class="chapter-item expanded "><a href="debug-key-bindings.html"><strong aria-hidden="true">4.1.3.</strong> Debug Key Bindings</a></li></ol></li><li class="chapter-item expanded "><a href="general-config.html"><strong aria-hidden="true">4.2.</strong> General Config</a></li><li class="chapter-item expanded "><a href="modes.html"><strong aria-hidden="true">4.3.</strong> Modes</a></li><li class="chapter-item expanded "><a href="message.html"><strong aria-hidden="true">4.4.</strong> Message</a></li><li class="chapter-item expanded "><a href="layouts.html"><strong aria-hidden="true">4.5.</strong> Layouts</a></li><li class="chapter-item expanded "><a href="node_types.html"><strong aria-hidden="true">4.6.</strong> Node Types</a></li><li class="chapter-item expanded "><a href="borders.html"><strong aria-hidden="true">4.7.</strong> Borders</a></li><li class="chapter-item expanded "><a href="style.html"><strong aria-hidden="true">4.8.</strong> Style</a></li><li class="chapter-item expanded "><a href="sorting.html"><strong aria-hidden="true">4.9.</strong> Sorting</a></li><li class="chapter-item expanded "><a href="filtering.html"><strong aria-hidden="true">4.10.</strong> Filtering</a></li><li class="chapter-item expanded "><a href="column-renderer.html"><strong aria-hidden="true">4.11.</strong> Column Renderer</a></li></ol></li><li class="chapter-item expanded "><a href="plugin.html"><strong aria-hidden="true">5.</strong> Plugin</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="installing-plugins.html"><strong aria-hidden="true">5.1.</strong> Installing Plugins</a></li><li class="chapter-item expanded "><a href="writing-plugins.html"><strong aria-hidden="true">5.2.</strong> Writing Plugins</a></li><li class="chapter-item expanded "><a href="awesome-plugins.html"><strong aria-hidden="true">5.3.</strong> Awesome Plugins</a></li></ol></li><li class="chapter-item expanded "><a href="integration.html"><strong aria-hidden="true">6.</strong> Integration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="awesome-integrations.html"><strong aria-hidden="true">6.1.</strong> Awesome Integrations</a></li></ol></li><li class="chapter-item expanded "><a href="todo.html"><strong aria-hidden="true">7.</strong> TODO</a></li><li class="chapter-item expanded "><a href="alternatives.html"><strong aria-hidden="true">8.</strong> Alternatives</a></li><li class="chapter-item expanded "><a href="upgrade-guide.html" class="active"><strong aria-hidden="true">9.</strong> Upgrade Guide</a></li><li class="chapter-item expanded "><a href="community.html"><strong aria-hidden="true">10.</strong> Community</a></li><li class="chapter-item expanded "><a href="contribute.html"><strong aria-hidden="true">11.</strong> Contribute</a></li></ol>
+
+                <ol class="chapter"><li class="chapter-item expanded "><a href="introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="quickstart.html"><strong aria-hidden="true">2.</strong> Quickstart</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install.html"><strong aria-hidden="true">2.1.</strong> Install</a></li><li class="chapter-item expanded "><a href="post-install.html"><strong aria-hidden="true">2.2.</strong> Post Install</a></li></ol></li><li class="chapter-item expanded "><a href="configuration.html"><strong aria-hidden="true">3.</strong> Configuration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="general-config.html"><strong aria-hidden="true">3.1.</strong> General</a></li><li class="chapter-item expanded "><a href="node_types.html"><strong aria-hidden="true">3.2.</strong> Node Types</a></li><li class="chapter-item expanded "><a href="layouts.html"><strong aria-hidden="true">3.3.</strong> Layouts</a></li><li class="chapter-item expanded "><a href="modes.html"><strong aria-hidden="true">3.4.</strong> Modes</a></li></ol></li><li class="chapter-item expanded "><a href="concept.html"><strong aria-hidden="true">4.</strong> Concept</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="key-bindings.html"><strong aria-hidden="true">4.1.</strong> Key Bindings</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="configure-key-bindings.html"><strong aria-hidden="true">4.1.1.</strong> Configure Key Bindings</a></li><li class="chapter-item expanded "><a href="default-key-bindings.html"><strong aria-hidden="true">4.1.2.</strong> Default Key Bindings</a></li><li class="chapter-item expanded "><a href="debug-key-bindings.html"><strong aria-hidden="true">4.1.3.</strong> Debug Key Bindings</a></li></ol></li><li class="chapter-item expanded "><a href="node-type.html"><strong aria-hidden="true">4.2.</strong> Node Type</a></li><li class="chapter-item expanded "><a href="layout.html"><strong aria-hidden="true">4.3.</strong> Layout</a></li><li class="chapter-item expanded "><a href="mode.html"><strong aria-hidden="true">4.4.</strong> Mode</a></li><li class="chapter-item expanded "><a href="message.html"><strong aria-hidden="true">4.5.</strong> Message</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="messages.html"><strong aria-hidden="true">4.5.1.</strong> Full List of Messages</a></li><li class="chapter-item expanded "><a href="input-operation.html"><strong aria-hidden="true">4.5.2.</strong> Input Operation</a></li></ol></li><li class="chapter-item expanded "><a href="borders.html"><strong aria-hidden="true">4.6.</strong> Borders</a></li><li class="chapter-item expanded "><a href="style.html"><strong aria-hidden="true">4.7.</strong> Style</a></li><li class="chapter-item expanded "><a href="sorting.html"><strong aria-hidden="true">4.8.</strong> Sorting</a></li><li class="chapter-item expanded "><a href="filtering.html"><strong aria-hidden="true">4.9.</strong> Filtering</a></li><li class="chapter-item expanded "><a href="column-renderer.html"><strong aria-hidden="true">4.10.</strong> Column Renderer</a></li><li class="chapter-item expanded "><a href="lua-function-calls.html"><strong aria-hidden="true">4.11.</strong> Lua Function Calls</a></li><li class="chapter-item expanded "><a href="environment-variables-and-pipes.html"><strong aria-hidden="true">4.12.</strong> Environment Variables and Pipes</a></li></ol></li><li class="chapter-item expanded "><a href="awesome-hacks.html"><strong aria-hidden="true">5.</strong> Awesome Hacks</a></li><li class="chapter-item expanded "><a href="plugin.html"><strong aria-hidden="true">6.</strong> Plugin</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="installing-plugins.html"><strong aria-hidden="true">6.1.</strong> Installing Plugins</a></li><li class="chapter-item expanded "><a href="writing-plugins.html"><strong aria-hidden="true">6.2.</strong> Writing Plugins</a></li><li class="chapter-item expanded "><a href="awesome-plugins.html"><strong aria-hidden="true">6.3.</strong> Awesome Plugins</a></li></ol></li><li class="chapter-item expanded "><a href="integration.html"><strong aria-hidden="true">7.</strong> Integration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="awesome-integrations.html"><strong aria-hidden="true">7.1.</strong> Awesome Integrations</a></li></ol></li><li class="chapter-item expanded "><a href="todo.html"><strong aria-hidden="true">8.</strong> TODO</a></li><li class="chapter-item expanded "><a href="alternatives.html"><strong aria-hidden="true">9.</strong> Alternatives</a></li><li class="chapter-item expanded "><a href="upgrade-guide.html" class="active"><strong aria-hidden="true">10.</strong> Upgrade Guide</a></li><li class="chapter-item expanded "><a href="community.html"><strong aria-hidden="true">11.</strong> Community</a></li><li class="chapter-item expanded "><a href="contribute.html"><strong aria-hidden="true">12.</strong> Contribute</a></li></ol>
+
+                <!-- EthicalAds -->
+                <div
+                  id="docs-sidebar-bottom"
+                  class="dark flat"
+                  data-ea-publisher="xplrdev"
+                  data-ea-type="image"
+                ></div>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -93,7 +103,7 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
@@ -177,7 +187,46 @@ e.g. <code>app-1.0.0</code> with <code>config-1.1.0</code>. But vice versa is fi
 compatibility.</p>
 </details>
 <h3 id="instructions"><a class="header" href="#instructions">Instructions</a></h3>
-<h4 id="v0164---v0172"><a class="header" href="#v0164---v0172"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.16.4">v0.16.4</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.17.2">v0.17.2</a></a></h4>
+<h4 id="v0176---v0180"><a class="header" href="#v0176---v0180"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.17.6">v0.17.6</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.18.0">v0.18.0</a></a></h4>
+<ul>
+<li>Key binding <code>f</code> <code>r</code> and <code>f</code> <code>R</code> will now filter using regex.</li>
+<li>Key binding <code>f</code> <code>backspace</code> will now remove the last filter.</li>
+<li>Search mode now defaults to regex search.</li>
+<li><code>Node</code> metadata in the Lua API will contain two new fields:
+<ul>
+<li><code>created</code></li>
+<li><code>last_modified</code></li>
+</ul>
+</li>
+<li>The last column in the files table now displays the last modification time.</li>
+<li>You can now use <code>--read0</code>, <code>--write0</code> and <code>-0</code>/<code>--null</code> to read and/or print
+null character delimited paths.</li>
+<li>You can now the following regex filters:
+<ul>
+<li><code>RelativePathDoesMatchRegex</code></li>
+<li><code>RelativePathDoesNotMatchRegex</code></li>
+<li><code>IRelativePathDoesMatchRegex</code></li>
+<li><code>IRelativePathDoesNotMatchRegex</code></li>
+<li><code>AbsolutePathDoesMatchRegex</code></li>
+<li><code>AbsolutePathDoesNotMatchRegex</code></li>
+<li><code>IAbsolutePathDoesMatchRegex</code></li>
+<li><code>IAbsolutePathDoesNotMatchRegex</code></li>
+</ul>
+</li>
+<li>You can use a new <code>SetInputPrompt</code> to set the input prompt dynamically.</li>
+<li>You can now use the following timestamp based sorters:
+<ul>
+<li>&quot;ByCreated&quot;</li>
+<li>&quot;ByLastModified&quot;</li>
+<li>&quot;ByCanonicalCreated&quot;</li>
+<li>&quot;ByCanonicalLastModified&quot;</li>
+<li>&quot;BySymlinkCreated&quot;</li>
+<li>&quot;BySymlinkLastModified&quot;</li>
+</ul>
+</li>
+</ul>
+<p><sub>Like this project so far? <strong><a href="contribute.html">Please consider contributing</a></strong>.</sub></p>
+<h4 id="v0164---v0176"><a class="header" href="#v0164---v0176"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.16.4">v0.16.4</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.17.6">v0.17.6</a></a></h4>
 <ul>
 <li>Deprecated <code>app.directory_buffer</code>, <code>app.history</code>, and <code>app.last_modes</code> in
 the custom dynamic layout renderer context.
@@ -185,8 +234,8 @@ As of now, there's no way to access these fields in dynamic layouts. While
 <code>app.history</code> and <code>app.last_modes</code> can be re-added upon request
 (with justification), <code>app.directory_buffer</code> has been deprecated for good.
 However, there's no change in the <code>CallLua*</code> context.</li>
-<li>Set <code>xplr.config.general.hide_remaps_in_help_menu</code> to <code>true</code> to hide the remaps in
-help menu.</li>
+<li>Set <code>xplr.config.general.hide_remaps_in_help_menu</code> to <code>true</code> to hide the
+remaps in help menu.</li>
 <li><code>None</code> will be serialized to <code>nil</code> in Lua.</li>
 <li><code>LuaEval</code> can now return a function that will be called with the Lua Context
 argument. Refer to the <code>Full List of Messages</code> doc for example.</li>
@@ -196,6 +245,9 @@ occur.</li>
 <li>From version v0.17.2, you can use CLI argument <code>--print-pwd-as-result</code> for cd
 on quit, and key binding <code>ctrl-d</code> to duplicate a path in the same directory
 with a different name.</li>
+<li>Since version v0.17.3, you can use <code>border_type</code>, <code>border_style</code> to customize
+borders, and <code>enforce_bounded_index_navigation</code> to customize up/down
+navigation behavior when focus is on the top or bottom node.</li>
 </ul>
 <h4 id="v0152---v0164"><a class="header" href="#v0152---v0164"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.15.2">v0.15.2</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.16.4">v0.16.4</a></a></h4>
 <ul>
@@ -221,7 +273,6 @@ needing to define a function. However, the <code>app</code> context won't be ava
 </ul>
 </li>
 </ul>
-<p><sub>Like this project so far? <strong><a href="contribute.html">Please consider contributing</a></strong>.</sub></p>
 <h4 id="v0147---v0152"><a class="header" href="#v0147---v0152"><a href="https://github.com/sayanarijit/xplr/releases/tag/v0.14.7">v0.14.7</a> -&gt; <a href="https://github.com/sayanarijit/xplr/releases/tag/v0.15.2">v0.15.2</a></a></h4>
 <ul>
 <li>Deprecated <code>config</code> field from <code>CallLua</code> argument. Use the globally available

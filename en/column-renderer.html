@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" class="sidebar-visible no-js light">
+<html lang="en" class="sidebar-visible no-js dark">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -10,7 +10,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-        <link rel="icon" href="favicon.svg">
         <link rel="shortcut icon" href="favicon.png">
         <link rel="stylesheet" href="css/variables.css">
         <link rel="stylesheet" href="css/general.css">
@@ -25,12 +24,14 @@
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+        <!-- EthicalAds -->
+        <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
     </head>
     <body>
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
             var path_to_root = "";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "coal" : "dark";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -56,7 +57,7 @@
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
             html.classList.remove('no-js')
-            html.classList.remove('light')
+            html.classList.remove('dark')
             html.classList.add(theme);
             html.classList.add('js');
         </script>
@@ -75,7 +76,16 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="quickstart.html"><strong aria-hidden="true">2.</strong> Quickstart</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install.html"><strong aria-hidden="true">2.1.</strong> Install</a></li><li class="chapter-item expanded "><a href="post-install.html"><strong aria-hidden="true">2.2.</strong> Post Install</a></li></ol></li><li class="chapter-item expanded "><a href="awesome-hacks.html"><strong aria-hidden="true">3.</strong> Awesome Hacks</a></li><li class="chapter-item expanded "><a href="configuration.html"><strong aria-hidden="true">4.</strong> Configuration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="key-bindings.html"><strong aria-hidden="true">4.1.</strong> Key Bindings</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="configure-key-bindings.html"><strong aria-hidden="true">4.1.1.</strong> Configure Key Bindings</a></li><li class="chapter-item expanded "><a href="default-key-bindings.html"><strong aria-hidden="true">4.1.2.</strong> Default Key Bindings</a></li><li class="chapter-item expanded "><a href="debug-key-bindings.html"><strong aria-hidden="true">4.1.3.</strong> Debug Key Bindings</a></li></ol></li><li class="chapter-item expanded "><a href="general-config.html"><strong aria-hidden="true">4.2.</strong> General Config</a></li><li class="chapter-item expanded "><a href="modes.html"><strong aria-hidden="true">4.3.</strong> Modes</a></li><li class="chapter-item expanded "><a href="message.html"><strong aria-hidden="true">4.4.</strong> Message</a></li><li class="chapter-item expanded "><a href="layouts.html"><strong aria-hidden="true">4.5.</strong> Layouts</a></li><li class="chapter-item expanded "><a href="node_types.html"><strong aria-hidden="true">4.6.</strong> Node Types</a></li><li class="chapter-item expanded "><a href="borders.html"><strong aria-hidden="true">4.7.</strong> Borders</a></li><li class="chapter-item expanded "><a href="style.html"><strong aria-hidden="true">4.8.</strong> Style</a></li><li class="chapter-item expanded "><a href="sorting.html"><strong aria-hidden="true">4.9.</strong> Sorting</a></li><li class="chapter-item expanded "><a href="filtering.html"><strong aria-hidden="true">4.10.</strong> Filtering</a></li><li class="chapter-item expanded "><a href="column-renderer.html" class="active"><strong aria-hidden="true">4.11.</strong> Column Renderer</a></li></ol></li><li class="chapter-item expanded "><a href="plugin.html"><strong aria-hidden="true">5.</strong> Plugin</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="installing-plugins.html"><strong aria-hidden="true">5.1.</strong> Installing Plugins</a></li><li class="chapter-item expanded "><a href="writing-plugins.html"><strong aria-hidden="true">5.2.</strong> Writing Plugins</a></li><li class="chapter-item expanded "><a href="awesome-plugins.html"><strong aria-hidden="true">5.3.</strong> Awesome Plugins</a></li></ol></li><li class="chapter-item expanded "><a href="integration.html"><strong aria-hidden="true">6.</strong> Integration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="awesome-integrations.html"><strong aria-hidden="true">6.1.</strong> Awesome Integrations</a></li></ol></li><li class="chapter-item expanded "><a href="todo.html"><strong aria-hidden="true">7.</strong> TODO</a></li><li class="chapter-item expanded "><a href="alternatives.html"><strong aria-hidden="true">8.</strong> Alternatives</a></li><li class="chapter-item expanded "><a href="upgrade-guide.html"><strong aria-hidden="true">9.</strong> Upgrade Guide</a></li><li class="chapter-item expanded "><a href="community.html"><strong aria-hidden="true">10.</strong> Community</a></li><li class="chapter-item expanded "><a href="contribute.html"><strong aria-hidden="true">11.</strong> Contribute</a></li></ol>
+
+                <ol class="chapter"><li class="chapter-item expanded "><a href="introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="quickstart.html"><strong aria-hidden="true">2.</strong> Quickstart</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install.html"><strong aria-hidden="true">2.1.</strong> Install</a></li><li class="chapter-item expanded "><a href="post-install.html"><strong aria-hidden="true">2.2.</strong> Post Install</a></li></ol></li><li class="chapter-item expanded "><a href="configuration.html"><strong aria-hidden="true">3.</strong> Configuration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="general-config.html"><strong aria-hidden="true">3.1.</strong> General</a></li><li class="chapter-item expanded "><a href="node_types.html"><strong aria-hidden="true">3.2.</strong> Node Types</a></li><li class="chapter-item expanded "><a href="layouts.html"><strong aria-hidden="true">3.3.</strong> Layouts</a></li><li class="chapter-item expanded "><a href="modes.html"><strong aria-hidden="true">3.4.</strong> Modes</a></li></ol></li><li class="chapter-item expanded "><a href="concept.html"><strong aria-hidden="true">4.</strong> Concept</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="key-bindings.html"><strong aria-hidden="true">4.1.</strong> Key Bindings</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="configure-key-bindings.html"><strong aria-hidden="true">4.1.1.</strong> Configure Key Bindings</a></li><li class="chapter-item expanded "><a href="default-key-bindings.html"><strong aria-hidden="true">4.1.2.</strong> Default Key Bindings</a></li><li class="chapter-item expanded "><a href="debug-key-bindings.html"><strong aria-hidden="true">4.1.3.</strong> Debug Key Bindings</a></li></ol></li><li class="chapter-item expanded "><a href="node-type.html"><strong aria-hidden="true">4.2.</strong> Node Type</a></li><li class="chapter-item expanded "><a href="layout.html"><strong aria-hidden="true">4.3.</strong> Layout</a></li><li class="chapter-item expanded "><a href="mode.html"><strong aria-hidden="true">4.4.</strong> Mode</a></li><li class="chapter-item expanded "><a href="message.html"><strong aria-hidden="true">4.5.</strong> Message</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="messages.html"><strong aria-hidden="true">4.5.1.</strong> Full List of Messages</a></li><li class="chapter-item expanded "><a href="input-operation.html"><strong aria-hidden="true">4.5.2.</strong> Input Operation</a></li></ol></li><li class="chapter-item expanded "><a href="borders.html"><strong aria-hidden="true">4.6.</strong> Borders</a></li><li class="chapter-item expanded "><a href="style.html"><strong aria-hidden="true">4.7.</strong> Style</a></li><li class="chapter-item expanded "><a href="sorting.html"><strong aria-hidden="true">4.8.</strong> Sorting</a></li><li class="chapter-item expanded "><a href="filtering.html"><strong aria-hidden="true">4.9.</strong> Filtering</a></li><li class="chapter-item expanded "><a href="column-renderer.html" class="active"><strong aria-hidden="true">4.10.</strong> Column Renderer</a></li><li class="chapter-item expanded "><a href="lua-function-calls.html"><strong aria-hidden="true">4.11.</strong> Lua Function Calls</a></li><li class="chapter-item expanded "><a href="environment-variables-and-pipes.html"><strong aria-hidden="true">4.12.</strong> Environment Variables and Pipes</a></li></ol></li><li class="chapter-item expanded "><a href="awesome-hacks.html"><strong aria-hidden="true">5.</strong> Awesome Hacks</a></li><li class="chapter-item expanded "><a href="plugin.html"><strong aria-hidden="true">6.</strong> Plugin</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="installing-plugins.html"><strong aria-hidden="true">6.1.</strong> Installing Plugins</a></li><li class="chapter-item expanded "><a href="writing-plugins.html"><strong aria-hidden="true">6.2.</strong> Writing Plugins</a></li><li class="chapter-item expanded "><a href="awesome-plugins.html"><strong aria-hidden="true">6.3.</strong> Awesome Plugins</a></li></ol></li><li class="chapter-item expanded "><a href="integration.html"><strong aria-hidden="true">7.</strong> Integration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="awesome-integrations.html"><strong aria-hidden="true">7.1.</strong> Awesome Integrations</a></li></ol></li><li class="chapter-item expanded "><a href="todo.html"><strong aria-hidden="true">8.</strong> TODO</a></li><li class="chapter-item expanded "><a href="alternatives.html"><strong aria-hidden="true">9.</strong> Alternatives</a></li><li class="chapter-item expanded "><a href="upgrade-guide.html"><strong aria-hidden="true">10.</strong> Upgrade Guide</a></li><li class="chapter-item expanded "><a href="community.html"><strong aria-hidden="true">11.</strong> Community</a></li><li class="chapter-item expanded "><a href="contribute.html"><strong aria-hidden="true">12.</strong> Contribute</a></li></ol>
+
+                <!-- EthicalAds -->
+                <div
+                  id="docs-sidebar-bottom"
+                  class="dark flat"
+                  data-ea-publisher="xplrdev"
+                  data-ea-type="image"
+                ></div>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -93,7 +103,7 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
@@ -143,7 +153,7 @@
                         <h1 id="column-renderer"><a class="header" href="#column-renderer">Column Renderer</a></h1>
 <p>A column renderer is a Lua function that receives a <a href="#table-renderer-argument">special argument</a> and
 returns a string that will be displayed in each specific field of the
-<a href="layouts.html#table">files table</a>.</p>
+<a href="layout.html#table">files table</a>.</p>
 <p>xplr by default provides the following column renderers:</p>
 <ul>
 <li><code>xplr.fn.builtin.fmt_general_table_row_cols_0</code></li>
@@ -171,6 +181,8 @@ returns a string that will be displayed in each specific field of the
 <li><a href="#size">size</a></li>
 <li><a href="#human_size">human_size</a></li>
 <li><a href="#permissions">permissions</a></li>
+<li><a href="#created">created</a></li>
+<li><a href="#last_modified">last_modified</a></li>
 <li><a href="#canonical">canonical</a></li>
 <li><a href="#symlink">symlink</a></li>
 <li><a href="#index">index</a></li>
@@ -183,7 +195,7 @@ returns a string that will be displayed in each specific field of the
 <li><a href="#is_selected">is_selected</a></li>
 <li><a href="#is_focused">is_focused</a></li>
 <li><a href="#total">total</a></li>
-<li><a href="meta">meta</a></li>
+<li><a href="#meta">meta</a></li>
 </ul>
 <h3 id="parent"><a class="header" href="#parent">parent</a></h3>
 <p>Type: string</p>
@@ -225,6 +237,12 @@ recursively.</p>
 <h3 id="permissions"><a class="header" href="#permissions">permissions</a></h3>
 <p>Type: <a href="#permission">Permission</a></p>
 <p>The <a href="#permission">permissions</a> applied to the node.</p>
+<h3 id="created"><a class="header" href="#created">created</a></h3>
+<p>Type: nullable integer</p>
+<p>Creation time in nanosecond since UNIX epoch.</p>
+<h3 id="last_modified"><a class="header" href="#last_modified">last_modified</a></h3>
+<p>Type: nullable integer</p>
+<p>Last modification time in nanosecond since UNIX epoch.</p>
 <h3 id="canonical"><a class="header" href="#canonical">canonical</a></h3>
 <p>Type: nullable <a href="#resolved-node-metadata">Resolved Node Metadata</a></p>
 <p>If the node is a symlink, it will hold information about the symlink resolved
@@ -267,7 +285,7 @@ node. It will instead be null.</p>
 <p>The total number of the nodes.</p>
 <h3 id="meta"><a class="header" href="#meta">meta</a></h3>
 <p>Type: mapping of string and string</p>
-<p>The applicable <a href="node_types.html#meta">meta object</a> for the node.</p>
+<p>The applicable <a href="node-type.html#meta">meta object</a> for the node.</p>
 <h2 id="permission"><a class="header" href="#permission">Permission</a></h2>
 <p>Permission contains the following fields:</p>
 <ul>
@@ -296,6 +314,8 @@ node. It will instead be null.</p>
 <li><a href="#mime_essence">mime_essence</a></li>
 <li><a href="#size">size</a></li>
 <li><a href="#human_size">human_size</a></li>
+<li><a href="#created">created</a></li>
+<li><a href="#last_modified">last_modified</a></li>
 </ul>
 <h2 id="example-customizing-table-renderer"><a class="header" href="#example-customizing-table-renderer">Example: Customizing Table Renderer</a></h2>
 <pre><code class="language-lua">xplr.fn.custom.fmt_simple_column = function(m)
@@ -325,7 +345,7 @@ xplr.config.general.table.col_widths = {
                             <a rel="prev" href="filtering.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-                            <a rel="next" href="plugin.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="lua-function-calls.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         <div style="clear: both"></div>
@@ -337,7 +357,7 @@ xplr.config.general.table.col_widths = {
                     <a rel="prev" href="filtering.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
-                    <a rel="next" href="plugin.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="lua-function-calls.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
